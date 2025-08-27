@@ -9,7 +9,6 @@ int main() {
 
 	vector<char> letters;
 	string input;
-	string word;
 
 	printf("type word for checking palindrome>> ");
 	cin >> input;
@@ -20,12 +19,14 @@ int main() {
 		}
 	}
 
+	cout << input;
+
 	if (obj.checker(letters)) {
-		printf("1");
+		printf(" is palindrome");
 		return 0;
 	}
 
-	printf("0");
+	printf(" is not palindrome");
 	
 	return 0;
 }
